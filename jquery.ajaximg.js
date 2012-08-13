@@ -49,11 +49,11 @@ Blog：http://t.qq.com/usual2970
 			var nav="<ul style='position:absolute;right:0px;top:"+opts.height+"px;list-style:none;margin:0px;padding:0px;' id='nav'>";
 			for(i=1;i<=rs.total;i++){
 				if(i==1){
-					nav+="<li style='float:left' class='current' alt='"+i+"' style='cursor:pointer;'>"+i+"</li><li style='float:left'>-</li>";
+					nav+="<li style='cursor:pointer;float:left' class='current' alt='"+i+"'>"+i+"</li><li style='float:left'>-</li>";
 					continue;
 				}
-				if(i==rs.total) nav+="<li style='float:left' alt='"+i+"' style='cursor:pointer;'>"+i+"</li>";
-				else nav+="<li style='float:left' alt='"+i+"' style='cursor:pointer;'>"+i+"</li><li style='float:left'>-</li>";
+				if(i==rs.total) nav+="<li style='cursor:pointer;float:left' alt='"+i+"'>"+i+"</li>";
+				else nav+="<li style='cursor:pointer;float:left' alt='"+i+"'>"+i+"</li><li style='float:left'>-</li>";
 
 				
 			}
